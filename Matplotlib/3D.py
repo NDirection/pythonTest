@@ -32,3 +32,5 @@ ax.plot_surface(X,Y,Z , rstride= 1 ,cstride= 1 ,cmap = plt.get_cmap("rainbow"))
 ax.contourf(X,Y,Z,zdir='x',offset= -4 ,cmap =plt.get_cmap('terrain'))
 
 plt.show()
+
+##
