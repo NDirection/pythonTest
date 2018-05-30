@@ -226,3 +226,28 @@ np.save("some_array",arr)
 st = np.load("some_array.npy")
 
 print(st)
+
+print("------------------===========---")
+
+
+
+a = np.arange(1,10).reshape([1,9])
+
+print(a)
+
+print(a.shape)
+
+a = a[:,np.newaxis,:]
+
+print(a)
+
+
+X_date = np.linspace(-1,1,300)[:,np.newaxis]
+
+
+print(X_date.shape)
+
+
+
+
+
