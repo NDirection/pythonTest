@@ -11,6 +11,11 @@ def add_layer(inputs ,in_size ,out_size , activation_function =None):
 
     Wx_plus = tf.matmul(inputs,Weight)+biases
 
+
+    print("****")
+    print(Wx_plus)
+    print(biases)
+
     if activation_function is None:
         outputs = Wx_plus
 
@@ -30,9 +35,11 @@ y_data = np.square(X_date)-0.5+noise
 xs = tf.placeholder(tf.float32,[None,1])
 ys = tf.placeholder(tf.float32,[None,1])
 
+#add hidden layer
 l1 = add_layer(xs, 1, 10, activation_function=tf.nn.relu)
 
 
+# output layer
 prediction = add_layer(l1,10,1)
 
 
@@ -79,5 +86,5 @@ for i in range(1000):
         lines = ax.plot(X_date,prediction_value,'r-',lw =5)
 
 
-        plt.pause(5)
+       # plt.pause(5)
 

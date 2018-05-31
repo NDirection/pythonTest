@@ -242,12 +242,33 @@ a = a[:,np.newaxis,:]
 print(a)
 
 
-X_date = np.linspace(-1,1,300)[:,np.newaxis]
+X_date = np.linspace(-1,1,5)[:,np.newaxis]
 
 
 print(X_date.shape)
 
 
+Y_date = np.random.rand(1,2)
 
+print(Y_date)
+
+print(Y_date.shape)
+
+print(np.multiply(X_date,Y_date).shape)
+
+print("-----------")
+
+print(np.multiply(X_date,Y_date))
+
+
+print("-----------")
+
+biases = np.random.randn(1,2)
+
+print(biases)
+
+print("-----------")
+
+print(np.multiply(X_date,Y_date)+biases)
 
 

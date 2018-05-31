@@ -15,3 +15,4 @@ result = sess.run(hello)
 sess.close()
 
 print(result)
+
